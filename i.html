@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Custom Keyboard</title>
+    <style>
+        #keyboard {
+            display: none; /* Initially hidden */
+            border: 1px solid #000;
+            padding: 10px;
+            width: 250px;
+            background-color: #f1f1f1;
+        }
+
+        .key {
+            display: inline-block;
+            padding: 10px;
+            margin: 5px;
+            border: 1px solid #000;
+            cursor: pointer;
+            background-color: white;
+        }
+
+        .key:hover {
+            background-color: lightgray;
+        }
+    </style>
+</head>
+<body>
+<form >
+   <h4>1 كلب </h4>
+   <input type="text" name="1" id="1" placeholder="enter answer" required />
+   <h4>2 جمل</h4>
+   <input type="text" name="2" id="2" placeholder="enter answer" required />
+   <h4>3 فرس</h4>
+   <input type="text" name="3" id="3" placeholder="enter answer" required/>
+
+   </form>
+      <button class="button" type="submit"  onclick="fun()">submit</button>
+   <script>
+     function fun(){
+       var k=document.getElementById("1").value;
+       var ka="کتّا";
+       var l=document.getElementById("2").value;
+       var la="اونٹ";
+       var m=document.getElementById("3").value;
+       var ma="گھوڑا";
+      if(k==ka& l==la & m==ma ){
+  
+   window.location.href = "/Arabic/hii.html";
+        
+      }
+     }
+       
+      
+ 
+    </script>
+</body>
+</html>
