@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Page 3</title>
+    <script>
+        // Agar Page 2 complete nahi kiya hai, to access na do
+        if (!localStorage.getItem("page2Done")) {
+            alert("Access Denied! Pehle Page 2 complete karo.");
+            window.location.href = "index2.html";
+        }
+    </script>
+</head>
+<body>
+    <h2>Welcome to Page 3</h2>
+    <p>Congratulations! You have reached the final page.</p>
+</body>
+</html>

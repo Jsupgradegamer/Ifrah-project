@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Page 2</title>
+    <script>
+        // Agar Page 1 complete nahi kiya hai, to access na do
+        if (!localStorage.getItem("page1Done")) {
+            alert("Access Denied! Pehle Prevese complete karo.");
+            window.location.href = "index2.html";
+        }
+
+        function unlockPage3() {
+            localStorage.setItem("page2Done", "true"); // Page 2 completed
+         
+        }
+    </script>
+</head>
+<body>
+    <h2>Welcome to Page 2</h2>
+    <button onclick="unlockPage3()">Unlock Page 3</button>
+</body>
+</html>
